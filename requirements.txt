@@ -1,0 +1,14 @@
+# NeuraBuzz - Dependencies
+
+# Web scraping
+beautifulsoup4>=4.9.0
+requests>=2.25.0
+
+# Scheduling
+APScheduler>=3.7.0
+
+# Web server
+Flask>=2.0.0
+
+# Utilities
+python-dotenv>=0.19.0
