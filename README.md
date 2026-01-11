@@ -64,21 +64,56 @@ neurabuzz/
 
 ## Installation
 
-```bash
+### Prerequisites
+- Python 3.8+
+- Shopify store with API access
+
+### Setup
+
+**Windows:**
+```powershell
 # Clone repository
-git clone https://github.com/yourusername/neurabuzz.git
+git clone https://github.com/JannoLouwrens/neurabuzz.git
 cd neurabuzz
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-# Configure API keys
-cp config.py.example config.py
-# Edit config.py with your Shopify credentials
+**macOS / Linux:**
+```bash
+# Clone repository
+git clone https://github.com/JannoLouwrens/neurabuzz.git
+cd neurabuzz
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Environment Variables
+
+Create a `.env` file or set environment variables:
+
+```bash
+# Shopify credentials
+export SHOPIFY_STORE_URL="your-store.myshopify.com"
+export SHOPIFY_API_KEY="your-api-key"
+export SHOPIFY_API_PASSWORD="your-api-password"
+```
+
+On Windows (PowerShell):
+```powershell
+$env:SHOPIFY_STORE_URL="your-store.myshopify.com"
+$env:SHOPIFY_API_KEY="your-api-key"
+$env:SHOPIFY_API_PASSWORD="your-api-password"
 ```
 
 ## Configuration
