@@ -14,6 +14,12 @@ NeuraBuzz automates the e-commerce workflow for drop-shipping and product curati
 3. **Marketing Automation** - Scheduled campaigns for new products
 4. **Order Fulfillment** - Webhook-based order processing
 
+## Design Rationale
+
+NeuraBuzz started as a way to automate the full e-commerce loop, not just single scripts. I began with product discovery and listing creation, then added scheduling and webhook-based fulfillment to move from a one-off scraper into a self-running system.
+
+The implementation is intentionally simple and modular so each piece can be validated independently: scraping, Shopify API calls, marketing automation, and webhook handling. This made it easier to respect rate limits, troubleshoot failures, and evolve the system toward more robust automation.
+
 ## Features
 
 - **Scheduled Scraping** - APScheduler runs discovery every 24 hours
